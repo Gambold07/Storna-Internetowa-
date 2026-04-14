@@ -1,0 +1,254 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00c3ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* NAV */
+.nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+/* SEKCJE */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #243b55;
+}
+
+/* KARTY */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #00c3ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #eef3f8;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* TIMELINE */
+.timeline {
+    border-left: 3px solid #00c3ff;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 30px;
+    color: #00c3ff;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+<div class="hero">
+    <h1>Jan Kowalski</h1>
+    <p>Student Informatyki | Web Developer</p>
+    <a href="#kontakt" class="btn">Skontaktuj się</a>
+</div>
+
+<div class="nav">
+    <a href="#o-mnie">O mnie</a>
+    <a href="#umiejetnosci">Umiejętności</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#doswiadczenie">Doświadczenie</a>
+    <a href="#kontakt">Kontakt</a>
+</div>
+
+<div class="container">
+
+    <div id="o-mnie" class="section card">
+        <h2>O mnie</h2>
+        <p>
+            Jestem studentem informatyki rozwijającym się w kierunku tworzenia nowoczesnych aplikacji webowych.
+            Interesuję się frontendem, UX oraz nowymi technologiami.
+        </p>
+    </div>
+
+    <div class="section stats">
+        <div class="stat">
+            <h3>5+</h3>
+            <p>Projektów</p>
+        </div>
+        <div class="stat">
+            <h3>2 lata</h3>
+            <p>Nauki</p>
+        </div>
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Zaangażowania</p>
+        </div>
+    </div>
+
+    <div id="umiejetnosci" class="section card">
+        <h2>Umiejętności</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">WordPress</div>
+            <div class="skill">Responsive Design</div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="section card">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <div class="project">
+                <h3>Strona wizytówka</h3>
+                <p>Prosty projekt dla klienta</p>
+            </div>
+            <div class="project">
+                <h3>Landing Page</h3>
+                <p>Strona marketingowa</p>
+            </div>
+            <div class="project">
+                <h3>Blog WordPress</h3>
+                <p>System zarządzania treścią</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="doswiadczenie" class="section card">
+        <h2>Doświadczenie</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>2024 - obecnie</h4>
+                <p>Studia informatyczne</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2023</h4>
+                <p>Pierwsze projekty stron WWW</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="kontakt" class="section card">
+        <h2>Kontakt</h2>
+        <form>
+            <input type="text" placeholder="Imię">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Wiadomość"></textarea>
+            <button class="btn">Wyślij</button>
+        </form>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 Jan Kowalski | Projekt studencki</p>
+</div>
